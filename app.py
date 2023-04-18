@@ -15,7 +15,7 @@ def hello_world():
     return render_template('home.html')
 
 @app.route('/predict',methods=['POST'])
-def predict_datapoint():
+def fun():
         
     if request.method=='POST':
         Pregnancies=int(request.form['Pregnancies'])
